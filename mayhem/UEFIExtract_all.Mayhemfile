@@ -3,17 +3,17 @@
 # Format: YAML 1.1
 
 # Project name that the target belongs to
-project: Jon-FAS/uefiextract
+project: Jon-FAS/uefitool
 
 # Target name (should be unique within the project)
-target: uefiextract
+target: uefiextract_all
 
 # List of commands used to test the target
 cmds:
 
   # Command used to start the target, "@@" is the input file
   # (when "@@" is omitted Mayhem defaults to stdin inputs)
-  - cmd: /UEFIExtract @@ all
+  - cmd: ./UEFIExtract/UEFIExtract @@ all
     env:
       LD_LIBRARY_PATH: /lib/x86_64-linux-gnu
 

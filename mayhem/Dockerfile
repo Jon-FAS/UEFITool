@@ -10,4 +10,4 @@ RUN make
 
 FROM ubuntu:20.04 as package
 
-COPY --from=builder /UEFITool/UEFIExtract /
+COPY --from=builder /UEFITool /
